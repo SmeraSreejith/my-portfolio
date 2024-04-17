@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    
+}
+:root{
+  --x:rgb(182, 9, 9);
 }
 .home{
     height: 100vh;
@@ -10,6 +14,31 @@
     background-position: 60% 0%;
     background-size: cover;
     background-attachment: fixed;
+  }
+   
+ #home:hover{
+    color: var(--x);
+    font-weight: 500;
+  }
+  #abt:hover{
+    color: var(--x) ;
+    font-weight: 500;
+  }
+  #resume:hover{
+    color: var(--x);
+    font-weight: 500;
+  }
+  #skills:hover{
+  color: var(--x);
+  font-weight: 500;
+  }
+  #contact:hover{
+  color: var(--x);
+  font-weight: 500;
+  }
+  #btn:hover{
+    color:var(--x);
+    background-color: white;
   }
   #Resume{
     background-color: rgba(99, 93, 93, 0.288);   
@@ -77,7 +106,7 @@
       transform: translateY(-15px);
     }
   }
-.social-icons .twitter{
+.social-icons .envelope{
   animation: shake 1s infinite alternate;
 
 }
@@ -90,15 +119,15 @@
   }
 }
 
-.social-icons .facebook{
-  animation: shake 1s infinite alternate;
+.social-icons .instagram{
+  animation: move 1s infinite alternate;
 
 }
-@keyframes shake{
+@keyframes move{
   100% {
     transform: translateY(0);
   }
-  10% {
+  0% {
     transform: translateY(-15px);
   }
 }
@@ -108,11 +137,25 @@
   
 }
 @keyframes shake{
-  10% {
+  0% {
     transform: translateY(0);
-    
+  
   }
   100% {
     transform: translateY(-15px);
   }
 }
+
+.social-icons .github{
+  animation: move 1s infinite alternate;
+
+}
+@keyframes move{
+  100% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(-15px);
+  }
+}
+  
